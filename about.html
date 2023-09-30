@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- START DECORATIONS -->
+
+    <!-- circle texture -->
+    <div class="circle-texture"></div>
+    <!-- circle texture big -->
+    <div class="circle-texture-big"></div>
+    <!-- circle texture bottom -->
+    <div class="circle-texture-bottom"></div>
+    <!-- circle texture big bottom -->
+    <div class="circle-texture-big-bottom"></div>
+    <!-- lines texture -->
+    <div class="lines-texture"></div>
+    <!-- grid texture -->
+    <div class="grid-texture"></div>
+    <!-- vignette -->
+    <div class="vignette"></div>
+
+    <!-- END DECORATIONS -->
+
+    <header>
+      <!-- the burger id -->
+      <input
+        class="burger-checkbox"
+        id="burger-checkbox"
+        type="checkbox"
+        name="burger"
+      />
+      <div class="header-link-container">
+        <!-- decor -->
+        <div class="decor" id="header-link-container-decor"></div>
+        <!-- home link -->
+        <a class="header-link btn sound-btn" href="/index.html">
+          <!-- current button decor -->
+          <div class="current-button-decor"></div>
+          <!-- current page decor -->
+          <div class="current-page-header-link-decor"></div>
+          <!-- home svg -->
+          <svg
+            class="btn-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="31"
+            height="31"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"
+            />
+            <path
+              d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"
+            />
+          </svg>
+          <span class="btn-span"> home </span>
+        </a>
+        <!-- portfolio link -->
+        <a class="header-link btn sound-btn" href="/portfolio.html">
+          <!-- current button decor -->
+          <div class="current-button-decor"></div>
+          <!-- current page decor -->
+          <div class="current-page-header-link-decor"></div>
+          <!-- portfolio svg -->
+          <svg
+            class="btn-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="31"
+            height="31"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"
+            />
+          </svg>
+          <span class="btn-span"> portfolio </span>
+        </a>
+        <!-- about link -->
+        <a class="header-link btn sound-btn" href="/about.html">
+          <!-- current button decor -->
+          <div class="current-button-decor"></div>
+          <!-- current page decor -->
+          <div class="current-page-header-link-decor"></div>
+          <!-- info svg -->
+          <svg
+            class="btn-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="31"
+            height="31"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0Z"
+            />
+          </svg>
+          <span class="btn-span"> about </span>
+        </a>
+        <!-- contact link -->
+        <a class="header-link btn sound-btn" href="/contact.html">
+          <!-- current button decor -->
+          <div class="current-button-decor"></div>
+          <!-- current page decor -->
+          <div class="current-page-header-link-decor"></div>
+          <!-- person svg -->
+          <svg
+            class="btn-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="31"
+            height="31"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+            />
+          </svg>
+          <span class="btn-span"> contact </span>
+        </a>
+        <!-- exit burger, the label for the above burger id -->
+        <label
+          class="btn sound-btn cancel burger-label-button"
+          for="burger-checkbox"
+        >
+          <!-- exit burger btn -->
+          <!-- current button decor -->
+          <div class="current-button-decor"></div>
+          <!-- cross svg -->
+          <svg
+            class="btn-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="31"
+            height="31"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+          <span class="btn-span"> Exit Menu </span>
+        </label>
+      </div>
+      <!-- enter burger, the label for the above burger id -->
+      <div class="burger-label-container">
+        <label class="btn sound-btn burger-label-button" for="burger-checkbox">
+          <!-- burger btn -->
+          <!-- current button decor -->
+          <div class="current-button-decor"></div>
+          <!-- burger svg -->
+          <svg
+            class="btn-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="31"
+            height="31"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+          <span class="btn-span"> Enter Menu </span>
+        </label>
+      </div>
+      <!-- curtain - must be sibling of burger menu container -->
+      <div class="curtain"></div>
+    </header>
+    <div class="border-decor"></div>
+    <main>
+      <h1 class="page-title">portfolio</h1>
+      <div class="content-container">
+        <div class="card-container">
+          <!-- About -->
+          <div class="card">
+            <div class="heading">
+              <span>About Me</span>
+            </div>
+            <div class="body">
+              <div class="text-container">
+                <h2>I am a Craftsman</h2>
+                <p>
+                  Hi, I am Clifford William from a small city in Indonesia
+                  called Bandung. I really like to build things. That's sums up
+                  who I am. It does not matter what I need to learn or use, any
+                  cool web app I see online would motivate me to study and spend
+                  countless hours on it using any tech stack that I need to get
+                  it working.
+                </p>
+                <p>
+                  Why do I like to build things? I do not like to build just
+                  about anything, I like to make software / computer related
+                  things. I am unsure myself to why but I am confident to say
+                  that I think it is because of my perfectionist nature. I am
+                  not saying however that working with computers always are
+                  always organized. CSS for instance in my honest opinion is a
+                  complete mess and one must find the pattern that works in the
+                  madness. The motivation that drives me to create is simply
+                  because I like the process, and making beautiful things.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Who -->
+          <div class="card">
+            <div class="heading">
+              <span>Biography</span>
+            </div>
+            <div class="body">
+              <div class="text-container">
+                <h2>From Engineering</h2>
+                <p>
+                  I graduated from engineering only to not like the work
+                  environment and culture. Everything is a mess and no one
+                  really knows what they are doing. Everything lacks certainty.
+                  At least where I work back then.
+                </p>
+                <p>
+                  I was introduced to programming from my Manufacturing and
+                  Design professor in my Mechanical Engineering final year. I
+                  was forced into making a double pendulum simulation in MATLAB.
+                  Long story short I ended up liking MATLAB over anything else
+                  my classes had to offer back then.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Now -->
+          <div class="card">
+            <div class="heading">
+              <span>Now</span>
+            </div>
+            <div class="body">
+              <div class="text-container">
+                <h2>Fullstack trying web security</h2>
+                <p>
+                  I have decided on learning fullstack development, right now I
+                  am trying to get employed in my home country. During my
+                  unemployment I would spend my time on either making more web
+                  development projects or working on my dream video game called
+                  <strong>Massive Recoil</strong>.
+                </p>
+                <hr class="hr-light" />
+                <h2>Personality & Hobbies</h2>
+                <p>
+                  I am a reserved, quiet man who can socialize but prefers to
+                  read documentations or best practices in coding. For fun I
+                  like to play story based games and Tekken 7. I also like
+                  working in a big team, I like getting my pull requests
+                  accepted.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-card-container">
+        <div class="footer-card">
+          <span class="footer-text"
+            >&copy; 2023 Clifford William. All rights reserved.</span
+          >
+          <div class="footer-decor"></div>
+        </div>
+      </div>
+      <div class="border-decor"></div>
+      <div class="footer-spacer"></div>
+    </footer>
+    <script src="js/header_links_updater.js"></script>
+    <script src="js/audio_player.js"></script>
+  </body>
+</html>

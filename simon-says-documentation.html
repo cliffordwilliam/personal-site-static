@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- START DECORATIONS -->
+
+    <!-- circle texture -->
+    <div class="circle-texture"></div>
+    <!-- circle texture big -->
+    <div class="circle-texture-big"></div>
+    <!-- circle texture bottom -->
+    <div class="circle-texture-bottom"></div>
+    <!-- circle texture big bottom -->
+    <div class="circle-texture-big-bottom"></div>
+    <!-- lines texture -->
+    <div class="lines-texture"></div>
+    <!-- grid texture -->
+    <div class="grid-texture"></div>
+    <!-- vignette -->
+    <div class="vignette"></div>
+
+    <!-- END DECORATIONS -->
+
+    <header>
+      <!-- the burger id -->
+      <input
+        class="burger-checkbox"
+        id="burger-checkbox"
+        type="checkbox"
+        name="burger"
+      />
+      <div class="header-link-container">
+        <!-- decor -->
+        <div class="decor" id="header-link-container-decor"></div>
+        <!-- home link -->
+        <a class="header-link btn sound-btn" href="/index.html">
+          <!-- current button decor -->
+          <div class="current-button-decor"></div>
+          <!-- current page decor -->
+          <div class="current-page-header-link-decor"></div>
+          <!-- home svg -->
+          <svg
+            class="btn-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="31"
+            height="31"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"
+            />
+            <path
+              d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"
+            />
+          </svg>
+          <span class="btn-span"> home </span>
+        </a>
+        <!-- portfolio link -->
+        <a class="header-link btn sound-btn" href="/portfolio.html">
+          <!-- current button decor -->
+          <div class="current-button-decor"></div>
+          <!-- current page decor -->
+          <div class="current-page-header-link-decor"></div>
+          <!-- portfolio svg -->
+          <svg
+            class="btn-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="31"
+            height="31"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"
+            />
+          </svg>
+          <span class="btn-span"> portfolio </span>
+        </a>
+        <!-- about link -->
+        <a class="header-link btn sound-btn">
+          <!-- current button decor -->
+          <div class="current-button-decor"></div>
+          <!-- current page decor -->
+          <div class="current-page-header-link-decor"></div>
+          <!-- info svg -->
+          <svg
+            class="btn-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="31"
+            height="31"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0Z"
+            />
+          </svg>
+          <span class="btn-span"> about </span>
+        </a>
+        <!-- contact link -->
+        <a class="header-link btn sound-btn">
+          <!-- current button decor -->
+          <div class="current-button-decor"></div>
+          <!-- current page decor -->
+          <div class="current-page-header-link-decor"></div>
+          <!-- person svg -->
+          <svg
+            class="btn-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="31"
+            height="31"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+            />
+          </svg>
+          <span class="btn-span"> contact </span>
+        </a>
+        <!-- exit burger, the label for the above burger id -->
+        <label
+          class="btn sound-btn cancel burger-label-button"
+          for="burger-checkbox"
+        >
+          <!-- exit burger btn -->
+          <!-- current button decor -->
+          <div class="current-button-decor"></div>
+          <!-- cross svg -->
+          <svg
+            class="btn-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="31"
+            height="31"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+          <span class="btn-span"> Exit Menu </span>
+        </label>
+      </div>
+      <!-- enter burger, the label for the above burger id -->
+      <div class="burger-label-container">
+        <label class="btn sound-btn burger-label-button" for="burger-checkbox">
+          <!-- burger btn -->
+          <!-- current button decor -->
+          <div class="current-button-decor"></div>
+          <!-- burger svg -->
+          <svg
+            class="btn-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="31"
+            height="31"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+          <span class="btn-span"> Enter Menu </span>
+        </label>
+      </div>
+      <!-- curtain - must be sibling of burger menu container -->
+      <div class="curtain"></div>
+    </header>
+    <div class="border-decor"></div>
+    <main>
+      <h1 class="page-title">Simon Says Documentation</h1>
+      <div class="content-container">
+        <div class="card-container">
+          <!-- card intro -->
+          <div class="card full-width">
+            <div class="heading">
+              <span>Algorithm</span>
+            </div>
+            <div class="body">
+              <div class="text-container">
+                <h2>Work flow</h2>
+                <p>
+                  This project should showcase my abilities in using
+                  <strong>JS</strong>.
+                </p>
+                <p>
+                  Because this game requires visual output, I needed to get the
+                  front end done first quickly. It was quick and easy to do as
+                  it is very simple. I just needed to display 5 things. The game
+                  state, the 4 simon buttons and the start game button.
+                </p>
+                <p>
+                  Once the front end is done I work with both JS and CSS to
+                  manipulate the DOM tree. I like to do this so that I separate
+                  their concerns. So that all the styling is in the CSS and the
+                  logic is in the JS.
+                </p>
+                <p>Below is the whole JS for the game:</p>
+                <pre>
+                  <code>
+                    // words here refer to numbers from 0 to 3, sentences are sequences of numbers
+                    // talk means to glow a button, one button glow is one talk action
+                    
+                    // references
+                    const SIMON_BUTTON_CONTAINER = document.querySelector(
+                      ".simon-button-container"
+                    );
+                    const SIMON_BUTTONS = document.querySelectorAll(".simon-button");
+                    const GAME_STATE_HEADING = document.querySelector(".game-state-heading");
+                    const START_BUTTON = document.querySelector(".start-button");
+                    
+                    // vars for sentences
+                    let sentence = []; // store all words history from start of game
+                    let duplicateSentence; // to pop out one by one when reading
+                    
+                    // game play
+                    let state = 0;
+                    let score = 0;
+                    
+                    // delay between talking
+                    const DELAY = 500; // 0.5 second gap
+                    
+                    function disableButtons() {
+                      // prevent clicking
+                      for (let i = 0; i < SIMON_BUTTONS.length; i++) {
+                        const button = SIMON_BUTTONS[i];
+                        // remove signal
+                        button.removeEventListener("click", onPlayerClick);
+                        // disable
+                        button.classList.add("disabled");
+                      }
+                    }
+                    
+                    function enableButtons() {
+                      // allow clicking
+                      for (let i = 0; i < SIMON_BUTTONS.length; i++) {
+                        const button = SIMON_BUTTONS[i];
+                        button.addEventListener("click", onPlayerClick);
+                        button.classList.remove("disabled");
+                      }
+                    }
+                    
+                    function addWord() {
+                      // add word to sentence
+                      let randNum = get_random_number(3);
+                      sentence.push(randNum);
+                      // create a shallow copy of the sentence array
+                      duplicateSentence = [...sentence];
+                      // talk after 1s
+                      setTimeout(talk, DELAY);
+                      // update heading, talking
+                      set_state(1);
+                    }
+                    
+                    function talk() {
+                      // pop the first word
+                      let number = duplicateSentence.shift();
+                      // grab the associated button with word
+                      let currentButton = SIMON_BUTTON_CONTAINER.children[number];
+                      // glow the selected button (this play the blink animation)
+                      currentButton.classList.add("blink");
+                      // attach animation signal to current button
+                      currentButton.addEventListener("animationend", onBlinkAnimationEnd);
+                      // play sound
+                      stopAndPlay(SCROLLING_SFX);
+                    
+                      // after blink animation
+                      function onBlinkAnimationEnd() {
+                        // detach signal
+                        currentButton.removeEventListener("animationend", onBlinkAnimationEnd);
+                        // remove animation class
+                        currentButton.classList.remove("blink");
+                        // still have words to say?
+                        if (duplicateSentence.length > 0) {
+                          // talk
+                          setTimeout(talk, DELAY);
+                        } else {
+                          // player turn
+                          enableButtons();
+                          // create a shallow copy of the sentence array
+                          duplicateSentence = [...sentence];
+                          // update heading, player turn
+                          set_state(2);
+                        }
+                      }
+                    }
+                    
+                    function onPlayerClick() {
+                      // pop the first word
+                      let number = duplicateSentence.shift();
+                      // correct click?
+                      if (this.id === number.toString()) {
+                        stopAndPlay(CLICK_SFX);
+                        // no more words?
+                        if (duplicateSentence.length === 0) {
+                          // add score, simon turn
+                          score += 1;
+                          disableButtons();
+                          addWord();
+                        }
+                        // wrong click?
+                      } else {
+                        // back to waiting
+                        waiting();
+                        stopAndPlay(BACK_SFX);
+                      }
+                    }
+                    
+                    function get_random_number(value) {
+                      // return random number from 0 to given value
+                      return Math.floor(Math.random() * value + 1);
+                    }
+                    
+                    function waiting() {
+                      // enable the start button
+                      START_BUTTON.classList.remove("disabled");
+                      // attach start button signal
+                      START_BUTTON.addEventListener("click", onStartButtonClick);
+                      // update state, waiting
+                      set_state(0);
+                    }
+                    
+                    function onStartButtonClick() {
+                      // play sound
+                      stopAndPlay(CLICK_SFX);
+                      // disable the start button
+                      START_BUTTON.classList.add("disabled");
+                      // detach start button signal
+                      START_BUTTON.removeEventListener("click", onStartButtonClick);
+                      // add word, start game
+                      disableButtons();
+                      addWord();
+                    }
+                    
+                    function set_state(value) {
+                      old_state = state;
+                      state = value;
+                    
+                      // ENTRY
+                    
+                      // handle waiting state
+                      if (state === 0) {
+                        // from player turn
+                        if (old_state === 2) {
+                          GAME_STATE_HEADING.textContent =
+                            "Wrong! Your score is: " +
+                            score +
+                            "! Press the start button to play again.";
+                          // reset the game
+                          sentence = [];
+                          disableButtons();
+                          score = 0;
+                          // from first time starting the game
+                        } else if (old_state === 0) {
+                          GAME_STATE_HEADING.textContent = "Click the start button to play.";
+                        }
+                    
+                        // handle talking state
+                      } else if (state === 1) {
+                        // from waiting
+                        if (old_state === 0) {
+                          GAME_STATE_HEADING.textContent = "Remember the sequence.";
+                          // from player turn
+                        } else if (old_state === 2) {
+                          GAME_STATE_HEADING.textContent = "Correct! Remember the next sequence.";
+                        }
+                    
+                        // handle player state
+                      } else if (state === 2) {
+                        GAME_STATE_HEADING.textContent = "Repeat the sequence.";
+                      }
+                    }
+                    
+                    // initialize
+                    disableButtons();
+                    waiting();
+                    
+                    // cycle
+                    // waiting > addWord > talk > onPlayerClick > |- addWord
+                    //                                            |- waiting
+                    
+                    // grab the sounds
+                    const SCROLLING_SFX = new Audio("sounds/scrolling.mp3");
+                    const CLICK_SFX = new Audio("sounds/click.mp3");
+                    const BACK_SFX = new Audio("sounds/back.mp3");
+                    
+                    // the only way you enter a new page is from buttons
+                    // so play the click button on entry to a new page (this page)
+                    stopAndPlay(CLICK_SFX);
+                    
+                    function stopAndPlay(audio) {
+                      if (!audio.paused) {
+                        audio.pause();
+                        audio.currentTime = 0; // reset audio to the beginning
+                      }
+                      audio.play();
+                    }
+                    
+                  </code>
+                </pre>
+                <hr class="hr-light" />
+                <p>
+                  The idea is very simple, I just needed a loop. This loop is
+                  not a while loop in most games, but rather game states. The
+                  way I handle the states are by using a simple
+                  <strong>Finite State Machine Automata</strong>.
+                </p>
+                <p>There are a total of 3 states in this game:</p>
+                <ul>
+                  <li>Waiting</li>
+                  <li>Talking</li>
+                  <li>Answering</li>
+                </ul>
+                <p>
+                  The waiting state is simple, it waits for the player to press
+                  the start button. Once the player pressed it, the button adds
+                  a class to disable itself and also detaches the signal
+                </p>
+                <p>
+                  Before talking, the game adds a random number from 0 to 3
+                  representing which button was chosen. This number is then
+                  added into an array that will later be used to be compared to
+                  the player's answers. The array that was previously filled is
+                  duplicated. This is so that it can be easier for the talk
+                  function to just pop the Array one by one until the array is
+                  empty.
+                </p>
+                <p>
+                  The talking is a recursive call to itself where the call will
+                  add the glow class to start the button glow animation, each
+                  calls are made by the glowing end animation signal. The talk
+                  function keeps calling itself until the array is empty.
+                </p>
+                <p>
+                  Once the array is empty the buttons are all connected to the
+                  click signal where the player is allowed to click, each click
+                  the player made, the crawler will go through each of the item
+                  in the original array. Comparing it with each choices made. If
+                  the player manages to repeat the sequence completely with no
+                  mistake, the game proceeds to add another random button choice
+                  into the array. If however the player fails, then the game
+                  will return back into the waiting state.
+                </p>
+                <p>This concludes the documentation of the Simons Game.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-card-container">
+        <div class="footer-card">
+          <span class="footer-text"
+            >&copy; 2023 Clifford William. All rights reserved.</span
+          >
+          <div class="footer-decor"></div>
+        </div>
+      </div>
+      <div class="border-decor"></div>
+      <div class="footer-spacer"></div>
+    </footer>
+    <script src="js/header_links_updater.js"></script>
+    <script src="js/audio_player.js"></script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+/* debug */
+* {
+  /* show outline */
+  /* outline: 1px solid red; */
+
+  /* include padding */
+  box-sizing: border-box;
+}
+
+/* global */
+body {
+  /* change global font */
+  font-family: sans-serif;
+
+  background-color: #012;
+  color: #bcd;
+}
+
+hr {
+  border-color: #123;
+}
+
+article {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.game-state-heading {
+  text-align: center;
+}
+
+/* holds the buttons */
+.simon-button-container {
+  /* setup grid */
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+
+  /* center and limit max width */
+  max-width: 500px;
+  margin: 0 auto;
+
+  /* circle border */
+  border-radius: 100%;
+  overflow: hidden;
+  border: 16px solid #001;
+
+  background-color: #001;
+  gap: 16px;
+
+  position: relative;
+}
+
+/* simon buttons */
+.simon-button {
+  /* buttons are 1 to 1 ratio */
+  aspect-ratio: 1 / 1;
+
+  /* normal state is dim */
+  filter: brightness(50%);
+
+  /* remove border */
+  border: none;
+
+  /* button by default has no pointer cursor */
+  cursor: pointer;
+}
+
+.simon-button:active {
+  /* brighter on click */
+  filter: brightness(100%);
+}
+
+.simon-button.red {
+  background-color: red;
+}
+
+.simon-button.green {
+  background-color: green;
+}
+
+.simon-button.blue {
+  background-color: blue;
+}
+
+.simon-button.yellow {
+  background-color: yellow;
+}
+
+/* start game button */
+.start-button {
+  /* add more spacing from text content */
+  padding: 1em 2em;
+
+  /* font style */
+  text-transform: uppercase;
+  font-size: larger;
+  font-weight: 700;
+
+  /* artistic stuff */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1 / 1;
+  border-radius: 100%;
+
+  border: none;
+  border: 16px solid #001;
+  color: #eef;
+  background-color: #112;
+  cursor: pointer;
+
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+}
+
+/* artistic stuff */
+.start-button:hover {
+  color: #001;
+  background-color: #fff;
+}
+
+/* artistic stuff */
+.start-button:active {
+  color: #fff;
+  background-color: #001;
+}
+
+/* utils */
+.text-center {
+  text-align: center;
+}
+
+/* for js */
+/* disable simon button */
+.simon-button.disabled {
+  pointer-events: none;
+}
+
+/* for talking */
+.simon-button.blink {
+  animation: blink 0.5s;
+}
+
+/* Keyframes for the glow animation */
+@keyframes blink {
+  0%,
+  100% {
+    filter: brightness(50%);
+  }
+  50% {
+    filter: brightness(100%);
+  }
+}
+
+/* start game button is disabled when the game has started */
+.start-button.disabled {
+  pointer-events: none;
+  color: #112;
+  cursor: not-allowed;
+}
+
+/* RETURN BUTTON TO PERSONAL SITE PAGES */
+.return-btn-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.return-btn {
+  padding: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+
+  transition: background-color 0.2s, color 0.2s;
+  background-color: #bcd;
+  color: #012;
+  border: 1px solid #012;
+  border-radius: 50px;
+}
+.return-btn:hover {
+  background-color: #012;
+  color: #bcd;
+  border: 1px solid #bcd;
+}
