@@ -125,9 +125,10 @@ main {
   background-color: #dad4bb;
   box-shadow: 3px 3px #9a9784;
 
+  width: 100%;
   max-width: 537px;
   /* wrap first then shrink if smaller than thin */
-  flex-basis: 537px;
+  flex: 1 1 537px;
 }
 .card.full-width {
   max-width: 100%;
